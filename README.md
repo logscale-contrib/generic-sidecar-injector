@@ -1,8 +1,13 @@
+# This project is a fork of a project open sourced by sales force.
+
+It is intended to largely track the upstream projects with enhancements to better lock
+versions and improve the deployment experience/
+
 # A Generic framework for Writing Mutating Webhook Admission Controllers.
 
 
-[![Build Status](https://travis-ci.org/salesforce/generic-sidecar-injector.svg?branch=master)](https://travis-ci.org/salesforce/generic-sidecar-injector)
-[![Go Report Card](https://goreportcard.com/badge/github.com/salesforce/generic-sidecar-injector)](https://goreportcard.com/report/github.com/salesforce/generic-sidecar-injector)
+[![Build Status](https://travis-ci.org/logscale-contrib/generic-sidecar-injector.svg?branch=master)](https://travis-ci.org/logscale-contrib/generic-sidecar-injector)
+[![Go Report Card](https://goreportcard.com/badge/github.com/logscale-contrib/generic-sidecar-injector)](https://goreportcard.com/report/github.com/logscale-contrib/generic-sidecar-injector)
 
 Many kubernetes users have started using mutating admission controllers to inject sidecars.
 These sidecars are used for different purposes like logging, service mesh, monitoring, getting
