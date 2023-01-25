@@ -14,6 +14,9 @@ on:
       - "next-major"
 jobs:
   meta:
+    permissions:
+      contents: write   
+      packages: write
     runs-on: ubuntu-latest
     outputs:
       dockerhub-publish: ${{ steps.dockerhub-publish.outputs.defined }}
