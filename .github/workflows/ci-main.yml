@@ -78,6 +78,9 @@ jobs:
         run: make
 
   Containerize:
+    permissions:
+      contents: write   
+      packages: write
     runs-on: ubuntu-latest
     needs: [runTests, meta]
     steps:
