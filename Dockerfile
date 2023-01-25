@@ -15,7 +15,7 @@ ENV GOOS=linux
 
 RUN go build -ldflags  "-X 'github.com/salesforce/generic-sidecar-injector/pkg/metrics.gitHash=$GIT_HASH' -X 'github.com/salesforce/generic-sidecar-injector/pkg/metrics.gitTag=$GIT_TAG' -s" -installsuffix cgo -o sidecarinjector ./cmd/sidecarinjector
 
-FROM golang:1.19.5-alpine3.17
+FROM alpine:3.17
 COPY --from=build /sidecarinjector/sidecarinjector /sidecarinjector
-ENV PATH="/:${PATH}"
+# ENV PATH="/:${PATH}"
 CMD ["/sidecarinjector"]
