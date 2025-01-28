@@ -5,7 +5,7 @@ go 1.16
 require (
 	github.com/evanphx/json-patch v4.9.0+incompatible
 	github.com/ghodss/yaml v1.0.0
-	github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b
+	github.com/golang/glog v1.2.4
 	github.com/jessevdk/go-flags v1.4.0
 	github.com/pkg/errors v0.9.1
 	github.com/prometheus/client_golang v1.2.1
